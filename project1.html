@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Making Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-gradient-to-r from-green-500 to-green-700 p-6 shadow-lg">
+        <h1 class="text-white text-4xl font-extrabold tracking-wide">Delicious Recipes</h1>
+        <p class="text-white text-lg mt-2">Find, share, and enjoy amazing recipes!</p>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <!-- Featured Recipe Section -->
+        <section class="bg-white border border-gray-300 rounded-lg shadow-lg p-6 mb-10">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-4">Featured Recipe</h2>
+            <img src="c:\Users\User\Downloads\11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg" 
+                alt="Featured Recipe" 
+                class="rounded-lg h-64 w-auto mx-auto mb-4 shadow-md">
+            <h3 class="text-2xl font-semibold text-gray-800">Classic Spaghetti Carbonara</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">A quick and easy recipe for creamy and delicious spaghetti carbonara that is perfect for any occasion!</p>
+            <button class="bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-2 px-6 rounded-lg hover:shadow-xl transition">View Recipe</button>
+        </section>
+
+        <!-- Recipe List Section -->
+        <section class="mb-10">
+            <h2 class="text-3xl font-extrabold text-gray-800 text-center mb-6">Recipes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-5 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Chocolate Chip Cookies</h3>
+                    <p class="text-gray-600 flex-grow leading-relaxed">Crispy on the outside, chewy on the inside, and loaded with chocolate chips!</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-2 px-4 rounded-lg hover:shadow-xl transition">View Recipe</button>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-5 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Vegetarian Tacos</h3>
+                    <p class="text-gray-600 flex-grow leading-relaxed">A healthy and flavorful option for taco night!</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-2 px-4 rounded-lg hover:shadow-xl transition">View Recipe</button>
+                </div>
+                <div class="bg-white border border-gray-300 rounded-lg shadow-lg p-5 flex flex-col">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Lemon Garlic Chicken</h3>
+                    <p class="text-gray-600 flex-grow leading-relaxed">Juicy and tender chicken with a zesty lemon garlic flavor!</p>
+                    <button class="mt-4 bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-2 px-4 rounded-lg hover:shadow-xl transition">View Recipe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipe Submission Section -->
+        <section class="bg-white border border-gray-300 rounded-lg shadow-lg p-6">
+            <h2 class="text-3xl font-extrabold text-gray-800 mb-4">Submit Your Recipe</h2>
+            <form action="#" method="post" class="space-y-4">
+                <div>
+                    <label for="recipe-name" class="block text-gray-700 font-bold mb-2">Recipe Name:</label>
+                    <input type="text" id="recipe-name" name="recipe-name" class="w-full border border-gray-300 rounded-lg p-3 shadow-sm focus:ring-2 focus:ring-green-500" required>
+                </div>
+                <div>
+                    <label for="ingredients" class="block text-gray-700 font-bold mb-2">Ingredients:</label>
+                    <textarea id="ingredients" name="ingredients" rows="4" class="w-full border border-gray-300 rounded-lg p-3 shadow-sm focus:ring-2 focus:ring-green-500" required></textarea>
+                </div>
+                <div>
+                    <label for="instructions" class="block text-gray-700 font-bold mb-2">Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="6" class="w-full border border-gray-300 rounded-lg p-3 shadow-sm focus:ring-2 focus:ring-green-500" required></textarea>
+                </div>
+                <button type="submit" class="bg-gradient-to-r from-green-500 to-green-700 text-white font-bold py-2 px-6 rounded-lg hover:shadow-xl transition">Submit Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gradient-to-r from-green-600 to-green-800 p-4 mt-6">
+        <p class="text-center text-white font-medium">© 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
